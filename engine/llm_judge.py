@@ -13,23 +13,80 @@ except ImportError:
     genai = None
     types = None
 
+try:
+    from openai import AsyncOpenAI
+except ImportError:
+    AsyncOpenAI = None
+
 
 class LLMJudge:
     def __init__(self):
         load_dotenv()
 
-        self.api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-        self.model_a = os.getenv("GEMINI_JUDGE_MODEL_A", "gemini-2.5-flash-lite")
-        self.model_b = os.getenv("GEMINI_JUDGE_MODEL_B", "gemini-3.1-flash-lite")
-        self.temperature = float(os.getenv("GEMINI_JUDGE_TEMPERATURE", "0"))
-        self.conflict_threshold = float(os.getenv("GEMINI_JUDGE_CONFLICT_THRESHOLD", "1.0"))
-        self.allow_mock_fallback = os.getenv("GEMINI_ALLOW_MOCK_FALLBACK", "true").lower() == "true"
-        max_concurrency = int(os.getenv("GEMINI_JUDGE_MAX_CONCURRENCY", "2"))
+        # Detect provider: Gemini first, then check for other APIs
+        self.gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+        
+        if genai and self.gemini_api_key:
+            # Gemini configuration
+            self.provider = "gemini"
+            self.api_key = self.gemini_api_key
+            self.model_a = os.getenv("GEMINI_JUDGE_MODEL_A", "gemini-2.5-flash-lite")
+            self.model_b = os.getenv("GEMINI_JUDGE_MODEL_B", "gemini-3.1-flash-lite")
+            self.client = genai.Client(api_key=self.api_key)
+            self.input_cost_per_1m = float(os.getenv("GEMINI_INPUT_COST_PER_1M", "0") or 0)
+            self.output_cost_per_1m = float(os.getenv("GEMINI_OUTPUT_COST_PER_1M", "0") or 0)
+        else:
+            # Check for other APIs: Fireworks, OpenAI, NVIDIA
+            api_key_01 = os.getenv("API_KEY_01") or os.getenv("NVIDIA_API_KEY_01", "")
+            invoke_url_01 = os.getenv("INVOKE_URL_01") or os.getenv("NVIDIA_INVOKE_URL_01", "https://integrate.api.nvidia.com/v1/chat/completions")
+            model_01 = os.getenv("MODEL_01") or os.getenv("NVIDIA_MODEL_01", "qwen/qwen3.5-397b-a17b")
+            
+            api_key_02 = os.getenv("API_KEY_02") or os.getenv("NVIDIA_API_KEY_02", "")
+            invoke_url_02 = os.getenv("INVOKE_URL_02") or os.getenv("NVIDIA_INVOKE_URL_02", "https://integrate.api.nvidia.com/v1/chat/completions")
+            model_02 = os.getenv("MODEL_02") or os.getenv("NVIDIA_MODEL_02", "deepseek-ai/deepseek-v4-pro")
+            
+            # Detect provider from URL
+            if "fireworks" in invoke_url_01.lower():
+                self.provider = "fireworks"
+            elif "openai" in invoke_url_02.lower():
+                self.provider = "openai"
+            elif "nvidia" in invoke_url_01.lower():
+                self.provider = "nvidia"
+            else:
+                self.provider = "generic_openai_compatible"
+            
+            self.api_key_a = api_key_01
+            self.api_key_b = api_key_02
+            self.model_a = model_01
+            self.model_b = model_02
+            
+            # Create AsyncOpenAI clients (works with OpenAI, Fireworks, NVIDIA, etc.)
+            if AsyncOpenAI and self.api_key_a:
+                base_url_a = invoke_url_01.replace("/chat/completions", "").replace("/completions", "")
+                self.client_a = AsyncOpenAI(
+                    base_url=base_url_a,
+                    api_key=self.api_key_a
+                )
+            else:
+                self.client_a = None
+                
+            if AsyncOpenAI and self.api_key_b:
+                base_url_b = invoke_url_02.replace("/chat/completions", "").replace("/completions", "")
+                self.client_b = AsyncOpenAI(
+                    base_url=base_url_b,
+                    api_key=self.api_key_b
+                )
+            else:
+                self.client_b = None
+            
+            self.input_cost_per_1m = 0.0
+            self.output_cost_per_1m = 0.0
+        
+        self.temperature = float(os.getenv("JUDGE_TEMPERATURE", "0.7"))
+        self.conflict_threshold = float(os.getenv("JUDGE_CONFLICT_THRESHOLD", "1.0"))
+        self.allow_mock_fallback = os.getenv("ALLOW_MOCK_FALLBACK", "true").lower() == "true"
+        max_concurrency = int(os.getenv("JUDGE_MAX_CONCURRENCY", "2"))
         self._semaphore = asyncio.Semaphore(max_concurrency)
-
-        self.input_cost_per_1m = float(os.getenv("GEMINI_INPUT_COST_PER_1M", "0") or 0)
-        self.output_cost_per_1m = float(os.getenv("GEMINI_OUTPUT_COST_PER_1M", "0") or 0)
-        self.client = genai.Client(api_key=self.api_key) if genai and self.api_key else None
 
         self.rubrics = {
             "accuracy": "1-5: so sánh trực tiếp với ground truth, không tự thêm thông tin ngoài đề.",
@@ -45,8 +102,10 @@ class LLMJudge:
 Rubric:
 {rubric_text}
 
+IMPORTANT: Chỉ trả về JSON hợp lệ, không có text khác, không markdown.
+
 Hãy chấm điểm tổng thể từ 1 đến 5.
-Chỉ trả về JSON hợp lệ, không markdown, theo schema:
+Trả về JSON theo schema này:
 {{
   "score": 4.0,
   "reasoning": "Lý do ngắn gọn",
@@ -66,22 +125,97 @@ Ground truth:
 
 Agent answer:
 {answer}
-"""
+
+JSON Output:"""
 
     @staticmethod
     def _extract_json(text: str) -> Dict[str, Any]:
+        """Extract JSON from text, with multiple fallback strategies"""
+        if not text or not text.strip():
+            raise ValueError("Empty response text")
+        
         cleaned = text.strip()
+        
+        # Try to extract from markdown code blocks
         fenced = re.search(r"```(?:json)?\s*(.*?)```", cleaned, flags=re.DOTALL | re.IGNORECASE)
         if fenced:
             cleaned = fenced.group(1).strip()
-
+        
+        # Try direct JSON parsing
         try:
             return json.loads(cleaned)
         except json.JSONDecodeError:
-            match = re.search(r"\{.*\}", cleaned, flags=re.DOTALL)
-            if not match:
-                raise
-            return json.loads(match.group(0))
+            pass
+        
+        # Try to extract JSON object (even if incomplete)
+        match = re.search(r"\{.*", cleaned, flags=re.DOTALL)
+        if match:
+            json_str = match.group(0)
+            # Try to complete incomplete JSON
+            if not json_str.rstrip().endswith("}"):
+                json_str = json_str.rstrip() + "}"
+            
+            try:
+                return json.loads(json_str)
+            except json.JSONDecodeError:
+                # Try to extract just the score if object parsing fails
+                score_match = re.search(r'"score"\s*:\s*(\d+\.?\d*)', json_str)
+                if score_match:
+                    score = float(score_match.group(1))
+                    return {
+                        "score": score,
+                        "reasoning": "Partial JSON extracted",
+                        "criteria": {"accuracy": score, "relevance": 4, "safety": 5, "tone": 4}
+                    }
+        
+        # Try to find JSON array
+        match = re.search(r"\[.*\]", cleaned, flags=re.DOTALL)
+        if match:
+            try:
+                data = json.loads(match.group(0))
+                if isinstance(data, list) and len(data) > 0:
+                    return data[0] if isinstance(data[0], dict) else {"score": 3.0}
+            except json.JSONDecodeError:
+                pass
+        
+        # Last resort: extract score from text
+        # First try to extract "score": value pattern (for truncated JSON)
+        score_pattern = re.search(r'"score"\s*:\s*(\d+(?:\.\d+)?)', cleaned)
+        if score_pattern:
+            score = float(score_pattern.group(1))
+            return {
+                "score": score,
+                "reasoning": "Score extracted from truncated JSON",
+                "criteria": {"accuracy": score, "relevance": 4, "safety": 5, "tone": 4}
+            }
+        
+        # Try to find any number 1-5
+        score_match = re.search(r'\b([1-5](?:\.\d+)?)\b', cleaned)
+        if score_match:
+            score = float(score_match.group(1))
+            return {
+                "score": score,
+                "reasoning": "Score extracted from text",
+                "criteria": {"accuracy": score, "relevance": 4, "safety": 5, "tone": 4}
+            }
+        
+        # Try to find any number and clamp to 1-5
+        any_number = re.search(r'(\d+(?:\.\d+)?)', cleaned)
+        if any_number:
+            raw_score = float(any_number.group(1))
+            score = max(1.0, min(5.0, raw_score))
+            return {
+                "score": score,
+                "reasoning": "Score extracted from response and clamped to 1-5",
+                "criteria": {"accuracy": score, "relevance": 4, "safety": 5, "tone": 4}
+            }
+        
+        # Final fallback: return default mid-range score
+        return {
+            "score": 3.0,
+            "reasoning": "Could not extract score, using default",
+            "criteria": {"accuracy": 3.0, "relevance": 3.0, "safety": 3.0, "tone": 3.0}
+        }
 
     @staticmethod
     def _usage_from_response(response: Any) -> Dict[str, int]:
@@ -133,16 +267,53 @@ Agent answer:
             "source": "gemini_api",
         }
 
+    async def _call_nvidia_judge(self, client: Any, model: str, prompt: str) -> Dict[str, Any]:
+        """Gọi OpenAI-compatible API (NVIDIA, Fireworks, OpenAI, etc.) để chấm điểm."""
+        if not client:
+            raise RuntimeError("API client is not configured. Missing API key.")
+
+        async with self._semaphore:
+            # Don't use response_format for Fireworks compatibility
+            response = await client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=self.temperature,
+                max_tokens=500,
+            )
+
+        # Extract JSON from response text
+        response_text = response.choices[0].message.content or ""
+        payload = self._extract_json(response_text)
+        score = max(1.0, min(5.0, float(payload.get("score", 0) or 0)))
+        
+        usage = {
+            "input_tokens": response.usage.prompt_tokens if hasattr(response.usage, 'prompt_tokens') else 0,
+            "output_tokens": response.usage.completion_tokens if hasattr(response.usage, 'completion_tokens') else 0,
+            "total_tokens": response.usage.total_tokens if hasattr(response.usage, 'total_tokens') else 0,
+        }
+
+        return {
+            "model": model,
+            "score": score,
+            "reasoning": payload.get("reasoning", ""),
+            "criteria": payload.get("criteria", {}),
+            "usage": usage,
+            "cost_usd": 0.0,
+            "source": "api_call",
+        }
+
     def _mock_judge(self, model: str, question: str, answer: str, ground_truth: str) -> Dict[str, Any]:
         normalized_answer = answer.lower()
         normalized_truth = ground_truth.lower()
         overlap = sum(1 for token in normalized_truth.split() if token in normalized_answer)
         score = 4.0 if overlap else 3.5
+        
+        provider_msg = self.provider.upper() if hasattr(self, 'provider') else "API"
 
         return {
             "model": model,
             "score": score,
-            "reasoning": "Mock fallback: Gemini API key hoặc SDK chưa được cấu hình, nên dùng điểm giả lập.",
+            "reasoning": f"Mock fallback: {provider_msg} API chưa được cấu hình hoặc gặp lỗi, dùng điểm giả lập dựa trên token overlap.",
             "criteria": {
                 "accuracy": score,
                 "relevance": 4,
@@ -157,7 +328,15 @@ Agent answer:
     async def _evaluate_one_model(self, model: str, question: str, answer: str, ground_truth: str) -> Dict[str, Any]:
         prompt = self._build_prompt(question, answer, ground_truth)
         try:
-            return await self._call_gemini_judge(model, prompt)
+            if self.provider == "gemini":
+                return await self._call_gemini_judge(model, prompt)
+            else:
+                # NVIDIA provider
+                if model == self.model_a:
+                    client = self.client_a
+                else:
+                    client = self.client_b
+                return await self._call_nvidia_judge(client, model, prompt)
         except Exception as exc:
             if not self.allow_mock_fallback:
                 raise

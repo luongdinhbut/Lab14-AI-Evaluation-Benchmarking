@@ -10,8 +10,6 @@ from agent.main_agent import MainAgent
 
 DATASET_CANDIDATES = [
     "data/golden_set.json",
-    "data/golden_set.jsonl",
-    "data/golden_dataset.json",
 ]
 
 # Giả lập các components Expert
