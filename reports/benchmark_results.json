@@ -1,0 +1,2453 @@
+[
+  {
+    "test_case_id": "case_001",
+    "test_case": "Người trồng cây cần sa với diện tích 1 héc ta có tổ chức thì bị phạt tù bao nhiêu năm?",
+    "question": "Người trồng cây cần sa với diện tích 1 héc ta có tổ chức thì bị phạt tù bao nhiêu năm?",
+    "expected_answer": "Bị phạt tù từ 03 năm đến 07 năm.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Người trồng cây cần sa với diện tích 1 héc ta có tổ chức thì bị phạt tù bao nhiêu năm?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5095159000047715,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_002",
+    "test_case": "Hình phạt cao nhất đối với tội sản xuất trái phép chất ma túy là gì?",
+    "question": "Hình phạt cao nhất đối với tội sản xuất trái phép chất ma túy là gì?",
+    "expected_answer": "Phạt tù 20 năm, tù chung thân hoặc tử hình.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Hình phạt cao nhất đối với tội sản xuất trái phép chất ma túy là gì?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5095620999927633,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_003",
+    "test_case": "Tàng trữ 25 gam ma túy đá (methamphetamine) bị phạt bao nhiêu năm tù?",
+    "question": "Tàng trữ 25 gam ma túy đá (methamphetamine) bị phạt bao nhiêu năm tù?",
+    "expected_answer": "Bị phạt tù từ 05 năm đến 10 năm.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tàng trữ 25 gam ma túy đá (methamphetamine) bị phạt bao nhiêu năm tù?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5095274999912363,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_004",
+    "test_case": "Người sử dụng ma túy lần đầu và chưa bị kết án có bị phạt tù theo Điều 255 không?",
+    "question": "Người sử dụng ma túy lần đầu và chưa bị kết án có bị phạt tù theo Điều 255 không?",
+    "expected_answer": "Không, Điều 255 khoản 1 chỉ phạt người đã bị xử phạt hành chính hoặc kết án chưa xóa án tích.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Người sử dụng ma túy lần đầu và chưa bị kết án có bị phạt tù theo Điều 255 không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5095650000002934,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_005",
+    "test_case": "Tội vận chuyển ma túy trường hợp đặc biệt nghiêm trọng đi tù bao lâu?",
+    "question": "Tội vận chuyển ma túy trường hợp đặc biệt nghiêm trọng đi tù bao lâu?",
+    "expected_answer": "Từ 15 năm đến 20 năm.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tội vận chuyển ma túy trường hợp đặc biệt nghiêm trọng đi tù bao lâu?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5095335000078194,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_006",
+    "test_case": "Mua bán ma túy cho trẻ em 15 tuổi thì bị phạt như thế nào?",
+    "question": "Mua bán ma túy cho trẻ em 15 tuổi thì bị phạt như thế nào?",
+    "expected_answer": "Phạt tù từ 07 năm đến 15 năm.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Mua bán ma túy cho trẻ em 15 tuổi thì bị phạt như thế nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5104403000004822,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_007",
+    "test_case": "Người tổ chức cho người khác sử dụng ma túy có thể bị tử hình không?",
+    "question": "Người tổ chức cho người khác sử dụng ma túy có thể bị tử hình không?",
+    "expected_answer": "Không, hình phạt cao nhất là tù chung thân.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Người tổ chức cho người khác sử dụng ma túy có thể bị tử hình không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5105278999981238,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_008",
+    "test_case": "Người vi phạm quy định về quản lý thuốc gây nghiện gây hậu quả nghiêm trọng bị phạt tù mấy năm?",
+    "question": "Người vi phạm quy định về quản lý thuốc gây nghiện gây hậu quả nghiêm trọng bị phạt tù mấy năm?",
+    "expected_answer": "Từ 01 năm đến 05 năm.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Người vi phạm quy định về quản lý thuốc gây nghiện gây hậu quả nghiêm trọng bị phạt tù mấy năm?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5104820999986259,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_009",
+    "test_case": "Phạt tiền từ 5 triệu đến 500 triệu đồng được áp dụng khi nào?",
+    "question": "Phạt tiền từ 5 triệu đến 500 triệu đồng được áp dụng khi nào?",
+    "expected_answer": "Đó là hình phạt bổ sung cho người phạm một trong các tội tại Chương các tội phạm về ma túy.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Phạt tiền từ 5 triệu đến 500 triệu đồng được áp dụng khi nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5105355999985477,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_010",
+    "test_case": "Một người tàng trữ 0.5 gam cocaine thì có bị áp dụng khoản 2 Điều 249 không?",
+    "question": "Một người tàng trữ 0.5 gam cocaine thì có bị áp dụng khoản 2 Điều 249 không?",
+    "expected_answer": "Không, khoản 2 áp dụng cho tàng trữ cocaine từ 01 gam đến dưới 05 gam.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Một người tàng trữ 0.5 gam cocaine thì có bị áp dụng khoản 2 Điều 249 không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5104927999927895,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_011",
+    "test_case": "Người vận chuyển 0.5 gam ma túy đá sẽ bị tử hình đúng không?",
+    "question": "Người vận chuyển 0.5 gam ma túy đá sẽ bị tử hình đúng không?",
+    "expected_answer": "Sai, vận chuyển ma túy tùy mức độ, mức thấp nhất là 02-07 năm, không tự động bị tử hình.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Người vận chuyển 0.5 gam ma túy đá sẽ bị tử hình đúng không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5139905999967596,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_012",
+    "test_case": "Có bao nhiêu trường hợp phạm tội sản xuất ma túy bị tử hình?",
+    "question": "Có bao nhiêu trường hợp phạm tội sản xuất ma túy bị tử hình?",
+    "expected_answer": "Văn bản không liệt kê cụ thể số lượng trường hợp, chỉ nêu 'Phạm tội ở mức cao nhất'.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Có bao nhiêu trường hợp phạm tội sản xuất ma túy bị tử hình?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5141683999972884,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_013",
+    "test_case": "Tội tàng trữ ma túy nhưng để kinh doanh thì phạt theo điều nào?",
+    "question": "Tội tàng trữ ma túy nhưng để kinh doanh thì phạt theo điều nào?",
+    "expected_answer": "Không rõ từ ngữ kinh doanh, nhưng nếu tàng trữ nhằm mục đích mua bán thì không thuộc Điều 249, mà thuộc Điều 251 Tội mua bán.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tội tàng trữ ma túy nhưng để kinh doanh thì phạt theo điều nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5141070999961812,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_014",
+    "test_case": "Người sử dụng ma túy 3 lần bị phạt tù bao lâu?",
+    "question": "Người sử dụng ma túy 3 lần bị phạt tù bao lâu?",
+    "expected_answer": "Từ 02 năm đến 05 năm.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Người sử dụng ma túy 3 lần bị phạt tù bao lâu?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5141763999999966,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_015",
+    "test_case": "Một bác sĩ kê đơn thuốc gây nghiện dùng trong 10 ngày thì có đúng quy định không?",
+    "question": "Một bác sĩ kê đơn thuốc gây nghiện dùng trong 10 ngày thì có đúng quy định không?",
+    "expected_answer": "Không, mỗi đơn chỉ được kê tối đa 07 ngày sử dụng.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Một bác sĩ kê đơn thuốc gây nghiện dùng trong 10 ngày thì có đúng quy định không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5141328000026988,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_016",
+    "test_case": "Tiền chất là gì?",
+    "question": "Tiền chất là gì?",
+    "expected_answer": "Là các hóa chất không thể thiếu trong quá trình điều chế, sản xuất chất ma túy.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tiền chất là gì?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5121021999948425,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_017",
+    "test_case": "Ai có trách nhiệm phòng, chống ma túy?",
+    "question": "Ai có trách nhiệm phòng, chống ma túy?",
+    "expected_answer": "Cá nhân, gia đình, cơ quan, tổ chức và Nhà nước.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Ai có trách nhiệm phòng, chống ma túy?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5122053000086453,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_018",
+    "test_case": "Thanh thiếu niên 15 tuổi lần đầu sử dụng ma túy bị xử phạt như thế nào?",
+    "question": "Thanh thiếu niên 15 tuổi lần đầu sử dụng ma túy bị xử phạt như thế nào?",
+    "expected_answer": "Được giáo dục tại gia đình.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Thanh thiếu niên 15 tuổi lần đầu sử dụng ma túy bị xử phạt như thế nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5121554000070319,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_019",
+    "test_case": "Luật quy định bao nhiêu hình thức cai nghiện ma túy?",
+    "question": "Luật quy định bao nhiêu hình thức cai nghiện ma túy?",
+    "expected_answer": "3 hình thức: tự nguyện tại gia đình/cộng đồng, tự nguyện tại cơ sở và bắt buộc.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Luật quy định bao nhiêu hình thức cai nghiện ma túy?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.512223300000187,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_020",
+    "test_case": "Người bao nhiêu tuổi thì bị áp dụng biện pháp cai nghiện bắt buộc?",
+    "question": "Người bao nhiêu tuổi thì bị áp dụng biện pháp cai nghiện bắt buộc?",
+    "expected_answer": "Từ đủ 18 tuổi trở lên.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Người bao nhiêu tuổi thì bị áp dụng biện pháp cai nghiện bắt buộc?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5121624999883352,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_021",
+    "test_case": "Người bị cai nghiện bắt buộc có phải chấp hành án tù vì nghiện không?",
+    "question": "Người bị cai nghiện bắt buộc có phải chấp hành án tù vì nghiện không?",
+    "expected_answer": "Không, người bị áp dụng biện pháp cai nghiện bắt buộc không phải chấp hành hình phạt tù.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Người bị cai nghiện bắt buộc có phải chấp hành án tù vì nghiện không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5114483999932418,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_022",
+    "test_case": "Người cai nghiện tự nguyện thì ai phải trả chi phí?",
+    "question": "Người cai nghiện tự nguyện thì ai phải trả chi phí?",
+    "expected_answer": "Người cai nghiện hoặc gia đình chi trả, nếu không có khả năng thì được ngân sách nhà nước hỗ trợ.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Người cai nghiện tự nguyện thì ai phải trả chi phí?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5115042999968864,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_023",
+    "test_case": "Có thể đăng ký cai nghiện tại bệnh viện da liễu không?",
+    "question": "Có thể đăng ký cai nghiện tại bệnh viện da liễu không?",
+    "expected_answer": "Không được đề cập, chỉ được đăng ký tại gia đình, cộng đồng hoặc cơ sở cai nghiện.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Có thể đăng ký cai nghiện tại bệnh viện da liễu không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5114592000027187,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_024",
+    "test_case": "Nhà trường có trách nhiệm gì trong phòng chống ma túy?",
+    "question": "Nhà trường có trách nhiệm gì trong phòng chống ma túy?",
+    "expected_answer": "Giáo dục học sinh, sinh viên về phòng, chống ma túy.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Nhà trường có trách nhiệm gì trong phòng chống ma túy?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5115079999959562,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_025",
+    "test_case": "Nghị định 105/2021/NĐ-CP hướng dẫn thi hành luật nào?",
+    "question": "Nghị định 105/2021/NĐ-CP hướng dẫn thi hành luật nào?",
+    "expected_answer": "Luật Phòng, chống ma tuý.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Nghị định 105/2021/NĐ-CP hướng dẫn thi hành luật nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5114676999946823,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_026",
+    "test_case": "Muốn kinh doanh tiền chất thì cơ sở cần làm gì?",
+    "question": "Muốn kinh doanh tiền chất thì cơ sở cần làm gì?",
+    "expected_answer": "Phải đăng ký với cơ quan có thẩm quyền.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Muốn kinh doanh tiền chất thì cơ sở cần làm gì?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5118485999992117,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_027",
+    "test_case": "Bác sĩ thực tập có được kê đơn thuốc gây nghiện không?",
+    "question": "Bác sĩ thực tập có được kê đơn thuốc gây nghiện không?",
+    "expected_answer": "Không, chỉ bác sĩ có chứng chỉ hành nghề mới được kê đơn.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Bác sĩ thực tập có được kê đơn thuốc gây nghiện không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5119177000015043,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_028",
+    "test_case": "Khi mua thuốc gây nghiện cần xuất trình giấy tờ gì?",
+    "question": "Khi mua thuốc gây nghiện cần xuất trình giấy tờ gì?",
+    "expected_answer": "Chứng minh nhân dân.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Khi mua thuốc gây nghiện cần xuất trình giấy tờ gì?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5118739000026835,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_029",
+    "test_case": "Chỉ dùng ma túy 1 lần có bị coi là nghiện không?",
+    "question": "Chỉ dùng ma túy 1 lần có bị coi là nghiện không?",
+    "expected_answer": "Chưa đủ để xác định nghiện, vì thiếu các dấu hiệu như hội chứng cai, không kiểm soát được...",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Chỉ dùng ma túy 1 lần có bị coi là nghiện không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5119280999933835,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_030",
+    "test_case": "Trạm y tế cấp xã có được tự ý xác định tình trạng nghiện ma túy không?",
+    "question": "Trạm y tế cấp xã có được tự ý xác định tình trạng nghiện ma túy không?",
+    "expected_answer": "Không, thẩm quyền thuộc bệnh viện đa khoa tuyến tỉnh trở lên, bệnh viện chuyên khoa, hoặc cơ sở y tế được Sở Y tế ủy quyền.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Trạm y tế cấp xã có được tự ý xác định tình trạng nghiện ma túy không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5118903999973554,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_031",
+    "test_case": "Tôi muốn cai nghiện tại cộng đồng thì đăng ký ở đâu?",
+    "question": "Tôi muốn cai nghiện tại cộng đồng thì đăng ký ở đâu?",
+    "expected_answer": "Tại UBND xã, phường, thị trấn.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tôi muốn cai nghiện tại cộng đồng thì đăng ký ở đâu?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5128098999994108,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_032",
+    "test_case": "Cai nghiện tự nguyện tại cộng đồng mất tối đa bao lâu?",
+    "question": "Cai nghiện tự nguyện tại cộng đồng mất tối đa bao lâu?",
+    "expected_answer": "Văn bản chỉ quy định thời gian cai nghiện tối thiểu là 12 tháng, không nêu tối đa.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Cai nghiện tự nguyện tại cộng đồng mất tối đa bao lâu?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5128788000001805,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_033",
+    "test_case": "UBND cấp xã có quyền quyết định đưa người đi cai nghiện bắt buộc không?",
+    "question": "UBND cấp xã có quyền quyết định đưa người đi cai nghiện bắt buộc không?",
+    "expected_answer": "Không, UBND cấp xã chỉ đề xuất, UBND cấp huyện mới có quyền quyết định.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'UBND cấp xã có quyền quyết định đưa người đi cai nghiện bắt buộc không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5128446000016993,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_034",
+    "test_case": "Làm thế nào để được giảm thời hạn cai nghiện bắt buộc?",
+    "question": "Làm thế nào để được giảm thời hạn cai nghiện bắt buộc?",
+    "expected_answer": "Nếu người đó tiến bộ rõ rệt thì được xem xét giảm thời hạn.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Làm thế nào để được giảm thời hạn cai nghiện bắt buộc?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "luat-phong-chong-ma-tuy-2021",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5128822999977274,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "luat-phong-chong-ma-tuy-2021",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_035",
+    "test_case": "Có mấy danh mục chất ma túy theo Nghị định 57?",
+    "question": "Có mấy danh mục chất ma túy theo Nghị định 57?",
+    "expected_answer": "Chất ma túy được phân thành 4 danh mục.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Có mấy danh mục chất ma túy theo Nghị định 57?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5128529000066919,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_036",
+    "test_case": "Cần sa và THC thuộc danh mục nào?",
+    "question": "Cần sa và THC thuộc danh mục nào?",
+    "expected_answer": "Danh mục I.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Cần sa và THC thuộc danh mục nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5129260999965481,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_037",
+    "test_case": "Morphine bị cấm sử dụng hoàn toàn trong mọi trường hợp đúng không?",
+    "question": "Morphine bị cấm sử dụng hoàn toàn trong mọi trường hợp đúng không?",
+    "expected_answer": "Sai, Morphine thuộc Danh mục II, được dùng hạn chế trong y tế.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Morphine bị cấm sử dụng hoàn toàn trong mọi trường hợp đúng không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5130058000067947,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_038",
+    "test_case": "Thuốc Methadone được phân loại vào danh mục nào?",
+    "question": "Thuốc Methadone được phân loại vào danh mục nào?",
+    "expected_answer": "Danh mục II.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Thuốc Methadone được phân loại vào danh mục nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5129541000060271,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_039",
+    "test_case": "Tiền chất dùng trong sản xuất chất ma túy nằm ở danh mục số mấy?",
+    "question": "Tiền chất dùng trong sản xuất chất ma túy nằm ở danh mục số mấy?",
+    "expected_answer": "Danh mục III.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tiền chất dùng trong sản xuất chất ma túy nằm ở danh mục số mấy?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5130252999952063,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_040",
+    "test_case": "Hóa chất Ephedrine thường được dùng để làm gì trong điều chế?",
+    "question": "Hóa chất Ephedrine thường được dùng để làm gì trong điều chế?",
+    "expected_answer": "Dùng để tổng hợp methamphetamine.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Hóa chất Ephedrine thường được dùng để làm gì trong điều chế?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.512973900011275,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_041",
+    "test_case": "Có thể sử dụng Ketamine làm thuốc giảm đau tại phòng khám tư nhân tự do được không?",
+    "question": "Có thể sử dụng Ketamine làm thuốc giảm đau tại phòng khám tư nhân tự do được không?",
+    "expected_answer": "Không, Ketamine thuộc Danh mục I, tuyệt đối cấm sử dụng trong y tế (nếu dùng không phép).",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Có thể sử dụng Ketamine làm thuốc giảm đau tại phòng khám tư nhân tự do được không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5087458999914816,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_042",
+    "test_case": "Danh mục chất ma túy được nhà nước cập nhật dựa trên tổ chức quốc tế nào?",
+    "question": "Danh mục chất ma túy được nhà nước cập nhật dựa trên tổ chức quốc tế nào?",
+    "expected_answer": "Ủy ban Kiểm soát ma túy quốc tế (INCB).",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Danh mục chất ma túy được nhà nước cập nhật dựa trên tổ chức quốc tế nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5087970000022324,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_043",
+    "test_case": "Tàng trữ chất trong Danh mục I không phép có vi phạm hình sự không?",
+    "question": "Tàng trữ chất trong Danh mục I không phép có vi phạm hình sự không?",
+    "expected_answer": "Có, đó là vi phạm pháp luật hình sự theo BLHS 2015.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tàng trữ chất trong Danh mục I không phép có vi phạm hình sự không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5087561999971513,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_044",
+    "test_case": "Heroin thuộc nhóm chất gì và danh mục nào?",
+    "question": "Heroin thuộc nhóm chất gì và danh mục nào?",
+    "expected_answer": "Nhóm Opioid tổng hợp, thuộc Danh mục I.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Heroin thuộc nhóm chất gì và danh mục nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5087970000022324,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_045",
+    "test_case": "Chất Safrole dùng để làm gì và ở danh mục nào?",
+    "question": "Chất Safrole dùng để làm gì và ở danh mục nào?",
+    "expected_answer": "Dùng để tổng hợp MDA, MDMA; thuộc Danh mục III.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Chất Safrole dùng để làm gì và ở danh mục nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5087635999952909,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_046",
+    "test_case": "Tôi trồng cây thuốc phiện sau vườn nhà để ngắm thì có sao không?",
+    "question": "Tôi trồng cây thuốc phiện sau vườn nhà để ngắm thì có sao không?",
+    "expected_answer": "Có thể bị phạt tù từ 06 tháng đến 03 năm hoặc nặng hơn tùy mức độ vi phạm.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tôi trồng cây thuốc phiện sau vườn nhà để ngắm thì có sao không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5113544000050751,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_047",
+    "test_case": "Nếu bị phát hiện sử dụng ma túy khi 20 tuổi lần đầu thì bị xử lý hình sự hay hành chính?",
+    "question": "Nếu bị phát hiện sử dụng ma túy khi 20 tuổi lần đầu thì bị xử lý hình sự hay hành chính?",
+    "expected_answer": "Bị xử phạt vi phạm hành chính.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Nếu bị phát hiện sử dụng ma túy khi 20 tuổi lần đầu thì bị xử lý hình sự hay hành chính?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.511439000008977,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "luat-phong-chong-ma-tuy-2021"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_048",
+    "test_case": "Các chất hướng thần bị kiểm soát thuộc danh mục nào?",
+    "question": "Các chất hướng thần bị kiểm soát thuộc danh mục nào?",
+    "expected_answer": "Danh mục IV.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Các chất hướng thần bị kiểm soát thuộc danh mục nào?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021"
+    ],
+    "latency": 0.5113911000080407,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_049",
+    "test_case": "Xác định tình trạng nghiện ma túy có cần cả 4 dấu hiệu hay chỉ cần 1 dấu hiệu?",
+    "question": "Xác định tình trạng nghiện ma túy có cần cả 4 dấu hiệu hay chỉ cần 1 dấu hiệu?",
+    "expected_answer": "Cần có đủ các dấu hiệu (4 dấu hiệu).",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Xác định tình trạng nghiện ma túy có cần cả 4 dấu hiệu hay chỉ cần 1 dấu hiệu?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5114463999925647,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  },
+  {
+    "test_case_id": "case_050",
+    "test_case": "Một bệnh nhân ung thư tự mua Fentanyl về dùng để giảm đau thì có hợp pháp không?",
+    "question": "Một bệnh nhân ung thư tự mua Fentanyl về dùng để giảm đau thì có hợp pháp không?",
+    "expected_answer": "Không, Fentanyl thuộc Danh mục I tuyệt đối cấm sử dụng trong y tế. Tàng trữ sử dụng không phép là vi phạm pháp luật hình sự.",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Một bệnh nhân ung thư tự mua Fentanyl về dùng để giảm đau thì có hợp pháp không?' như sau: [Câu trả lời mẫu].",
+    "contexts": [
+      "Đoạn văn bản trích dẫn 1 dùng để trả lời...",
+      "Đoạn văn bản trích dẫn 2 dùng để trả lời..."
+    ],
+    "retrieved_ids": [
+      "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+      "luat-phong-chong-ma-tuy-2021",
+      "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+    ],
+    "latency": 0.5114064999943366,
+    "tokens_used": 150,
+    "cost_usd": 0.00015,
+    "model": "gpt-4o-mini",
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top_k": 3,
+        "evaluable": true,
+        "expected_ids": [
+          "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "retrieved_ids": [
+          "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
+          "luat-phong-chong-ma-tuy-2021",
+          "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ]
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "judge_a": 4.0,
+        "judge_b": 5.0
+      },
+      "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
+    },
+    "status": "pass",
+    "error_type": null
+  }
+]

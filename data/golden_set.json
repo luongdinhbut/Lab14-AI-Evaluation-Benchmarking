@@ -1,0 +1,653 @@
+[
+    {
+        "id": "case_001",
+        "question": "Người trồng cây cần sa với diện tích 1 héc ta có tổ chức thì bị phạt tù bao nhiêu năm?",
+        "expected_answer": "Bị phạt tù từ 03 năm đến 07 năm.",
+        "context": "Điều 247. 2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 03 năm đến 07 năm: a) Có tổ chức; c) Với số lượng từ 01 héc ta trở lên.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_002",
+        "question": "Hình phạt cao nhất đối với tội sản xuất trái phép chất ma túy là gì?",
+        "expected_answer": "Phạt tù 20 năm, tù chung thân hoặc tử hình.",
+        "context": "Điều 248. 4. Phạm tội ở mức cao nhất: phạt tù 20 năm, tù chung thân hoặc tử hình.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_003",
+        "question": "Tàng trữ 25 gam ma túy đá (methamphetamine) bị phạt bao nhiêu năm tù?",
+        "expected_answer": "Bị phạt tù từ 05 năm đến 10 năm.",
+        "context": "Điều 249 khoản 2: c) Tàng trữ ma tuý dạng tinh thể (methamphetamine) từ 05 gam đến dưới 30 gam;",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_004",
+        "question": "Người sử dụng ma túy lần đầu và chưa bị kết án có bị phạt tù theo Điều 255 không?",
+        "expected_answer": "Không, Điều 255 khoản 1 chỉ phạt người đã bị xử phạt hành chính hoặc kết án chưa xóa án tích.",
+        "context": "Điều 255. 1. Người nào sử dụng trái phép chất ma tuý, đã bị xử phạt vi phạm hành chính hoặc đã bị kết án về tội này, chưa được xoá án tích mà còn vi phạm, thì bị phạt tù từ 03 tháng đến 02 năm.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "hard",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_005",
+        "question": "Tội vận chuyển ma túy trường hợp đặc biệt nghiêm trọng đi tù bao lâu?",
+        "expected_answer": "Từ 15 năm đến 20 năm.",
+        "context": "Điều 250. 3. Phạm tội đặc biệt nghiêm trọng: phạt tù từ 15 năm đến 20 năm.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_006",
+        "question": "Mua bán ma túy cho trẻ em 15 tuổi thì bị phạt như thế nào?",
+        "expected_answer": "Phạt tù từ 07 năm đến 15 năm.",
+        "context": "Điều 251. 2. Phạm tội trong trường hợp nghiêm trọng hơn: phạt tù từ 07 năm đến 15 năm (có tổ chức, đối với người dưới 16 tuổi...).",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_007",
+        "question": "Người tổ chức cho người khác sử dụng ma túy có thể bị tử hình không?",
+        "expected_answer": "Không, hình phạt cao nhất là tù chung thân.",
+        "context": "Điều 256. 3. Trường hợp đặc biệt nghiêm trọng: phạt tù từ 15 năm đến 20 năm hoặc tù chung thân.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_008",
+        "question": "Người vi phạm quy định về quản lý thuốc gây nghiện gây hậu quả nghiêm trọng bị phạt tù mấy năm?",
+        "expected_answer": "Từ 01 năm đến 05 năm.",
+        "context": "Điều 258. 1. Người nào vi phạm quy định về quản lý thuốc gây nghiện gây hậu quả nghiêm trọng: phạt tù từ 01 năm đến 05 năm.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_009",
+        "question": "Phạt tiền từ 5 triệu đến 500 triệu đồng được áp dụng khi nào?",
+        "expected_answer": "Đó là hình phạt bổ sung cho người phạm một trong các tội tại Chương các tội phạm về ma túy.",
+        "context": "Điều 259. Hình phạt bổ sung: Người phạm một trong các tội tại Chương này, còn có thể bị: Phạt tiền từ 5.000.000 đồng đến 500.000.000 đồng...",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "ambiguous"
+        }
+    },
+    {
+        "id": "case_010",
+        "question": "Một người tàng trữ 0.5 gam cocaine thì có bị áp dụng khoản 2 Điều 249 không?",
+        "expected_answer": "Không, khoản 2 áp dụng cho tàng trữ cocaine từ 01 gam đến dưới 05 gam.",
+        "context": "Điều 249. 2. đ) Tàng trữ cocaine từ 01 gam đến dưới 05 gam;",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "hard",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_011",
+        "question": "Người vận chuyển 0.5 gam ma túy đá sẽ bị tử hình đúng không?",
+        "expected_answer": "Sai, vận chuyển ma túy tùy mức độ, mức thấp nhất là 02-07 năm, không tự động bị tử hình.",
+        "context": "Điều 250. 1. Người nào vận chuyển trái phép chất ma tuý, thì bị phạt tù từ 02 năm đến 07 năm.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_012",
+        "question": "Có bao nhiêu trường hợp phạm tội sản xuất ma túy bị tử hình?",
+        "expected_answer": "Văn bản không liệt kê cụ thể số lượng trường hợp, chỉ nêu 'Phạm tội ở mức cao nhất'.",
+        "context": "Điều 248. 4. Phạm tội ở mức cao nhất: phạt tù 20 năm, tù chung thân hoặc tử hình.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "ambiguous"
+        }
+    },
+    {
+        "id": "case_013",
+        "question": "Tội tàng trữ ma túy nhưng để kinh doanh thì phạt theo điều nào?",
+        "expected_answer": "Không rõ từ ngữ kinh doanh, nhưng nếu tàng trữ nhằm mục đích mua bán thì không thuộc Điều 249, mà thuộc Điều 251 Tội mua bán.",
+        "context": "Điều 249. 1. Người nào tàng trữ trái phép chất ma tuý mà không nhằm mục đích mua bán, vận chuyển...",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "out-of-context"
+        }
+    },
+    {
+        "id": "case_014",
+        "question": "Người sử dụng ma túy 3 lần bị phạt tù bao lâu?",
+        "expected_answer": "Từ 02 năm đến 05 năm.",
+        "context": "Điều 255. 2. Phạm tội 02 lần trở lên: bị phạt tù từ 02 năm đến 05 năm.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "hard",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_015",
+        "question": "Một bác sĩ kê đơn thuốc gây nghiện dùng trong 10 ngày thì có đúng quy định không?",
+        "expected_answer": "Không, mỗi đơn chỉ được kê tối đa 07 ngày sử dụng.",
+        "context": "Điều 7. 3. Mỗi đơn chỉ được kê tối đa 07 ngày sử dụng.",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_016",
+        "question": "Tiền chất là gì?",
+        "expected_answer": "Là các hóa chất không thể thiếu trong quá trình điều chế, sản xuất chất ma túy.",
+        "context": "Điều 2. 4. Tiền chất là các hoá chất không thể thiếu trong quá trình điều chế, sản xuất chất ma tuý.",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_017",
+        "question": "Ai có trách nhiệm phòng, chống ma túy?",
+        "expected_answer": "Cá nhân, gia đình, cơ quan, tổ chức và Nhà nước.",
+        "context": "Điều 3. 2. Phòng, chống ma tuý là trách nhiệm của cá nhân, gia đình, cơ quan, tổ chức và Nhà nước.",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_018",
+        "question": "Thanh thiếu niên 15 tuổi lần đầu sử dụng ma túy bị xử phạt như thế nào?",
+        "expected_answer": "Được giáo dục tại gia đình.",
+        "context": "Điều 8. 1. Người nghiện ma tuý từ đủ 12 tuổi đến dưới 18 tuổi lần đầu bị phát hiện sử dụng ma tuý được giáo dục tại gia đình.",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "hard",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_019",
+        "question": "Luật quy định bao nhiêu hình thức cai nghiện ma túy?",
+        "expected_answer": "3 hình thức: tự nguyện tại gia đình/cộng đồng, tự nguyện tại cơ sở và bắt buộc.",
+        "context": "Điều 28. Các hình thức cai nghiện ma tuý: 1. Cai nghiện... tự nguyện tại gia đình, cộng đồng. 2. ...tự nguyện tại cơ sở... 3. Cai nghiện ma tuý bắt buộc.",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_020",
+        "question": "Người bao nhiêu tuổi thì bị áp dụng biện pháp cai nghiện bắt buộc?",
+        "expected_answer": "Từ đủ 18 tuổi trở lên.",
+        "context": "Điều 32. 1. Người nghiện ma tuý từ đủ 18 tuổi trở lên...",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_021",
+        "question": "Người bị cai nghiện bắt buộc có phải chấp hành án tù vì nghiện không?",
+        "expected_answer": "Không, người bị áp dụng biện pháp cai nghiện bắt buộc không phải chấp hành hình phạt tù.",
+        "context": "Điều 32. 3. Người bị áp dụng biện pháp cai nghiện bắt buộc không phải chấp hành hình phạt tù.",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "hard",
+            "type": "conflicting"
+        }
+    },
+    {
+        "id": "case_022",
+        "question": "Người cai nghiện tự nguyện thì ai phải trả chi phí?",
+        "expected_answer": "Người cai nghiện hoặc gia đình chi trả, nếu không có khả năng thì được ngân sách nhà nước hỗ trợ.",
+        "context": "Điều 35. 1. Chi phí cai nghiện ma tuý tự nguyện do người cai nghiện hoặc gia đình chi trả. 2. Người không có khả năng chi trả được hỗ trợ từ ngân sách nhà nước.",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_023",
+        "question": "Có thể đăng ký cai nghiện tại bệnh viện da liễu không?",
+        "expected_answer": "Không được đề cập, chỉ được đăng ký tại gia đình, cộng đồng hoặc cơ sở cai nghiện.",
+        "context": "Điều 29. Người nghiện ma tuý tự nguyện đăng ký cai nghiện tại gia đình, cộng đồng hoặc tại cơ sở cai nghiện.",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "hard",
+            "type": "out-of-context"
+        }
+    },
+    {
+        "id": "case_024",
+        "question": "Nhà trường có trách nhiệm gì trong phòng chống ma túy?",
+        "expected_answer": "Giáo dục học sinh, sinh viên về phòng, chống ma túy.",
+        "context": "Điều 6. 3. Nhà trường có trách nhiệm giáo dục học sinh, sinh viên về phòng, chống ma tuý.",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_025",
+        "question": "Nghị định 105/2021/NĐ-CP hướng dẫn thi hành luật nào?",
+        "expected_answer": "Luật Phòng, chống ma tuý.",
+        "context": "Nghị định 105/2021/NĐ-CP hướng dẫn thi hành một số điều của Luật Phòng, chống ma tuý",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_026",
+        "question": "Muốn kinh doanh tiền chất thì cơ sở cần làm gì?",
+        "expected_answer": "Phải đăng ký với cơ quan có thẩm quyền.",
+        "context": "Điều 3. 2. Cơ sở sản xuất, kinh doanh tiền chất phải đăng ký với cơ quan có thẩm quyền.",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_027",
+        "question": "Bác sĩ thực tập có được kê đơn thuốc gây nghiện không?",
+        "expected_answer": "Không, chỉ bác sĩ có chứng chỉ hành nghề mới được kê đơn.",
+        "context": "Điều 7. 1. Bác sĩ có chứng chỉ hành nghề mới được kê đơn thuốc gây nghiện.",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_028",
+        "question": "Khi mua thuốc gây nghiện cần xuất trình giấy tờ gì?",
+        "expected_answer": "Chứng minh nhân dân.",
+        "context": "Điều 7. 4. Người bệnh phải xuất trình chứng minh nhân dân khi mua thuốc.",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_029",
+        "question": "Chỉ dùng ma túy 1 lần có bị coi là nghiện không?",
+        "expected_answer": "Chưa đủ để xác định nghiện, vì thiếu các dấu hiệu như hội chứng cai, không kiểm soát được...",
+        "context": "Điều 10. 1. Người được xác định là nghiện ma tuý khi có đủ các dấu hiệu: a) Có bằng chứng sử dụng... b) Có hội chứng cai... c) Không kiểm soát... d) Tiếp tục sử dụng...",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_030",
+        "question": "Trạm y tế cấp xã có được tự ý xác định tình trạng nghiện ma túy không?",
+        "expected_answer": "Không, thẩm quyền thuộc bệnh viện đa khoa tuyến tỉnh trở lên, bệnh viện chuyên khoa, hoặc cơ sở y tế được Sở Y tế ủy quyền.",
+        "context": "Điều 11. Thẩm quyền xác định nghiện ma tuý: 1. Bệnh viện đa khoa tuyến tỉnh trở lên. 2. Bệnh viện chuyên khoa... 3. Cơ sở y tế được Sở Y tế uỷ quyền.",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "hard",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_031",
+        "question": "Tôi muốn cai nghiện tại cộng đồng thì đăng ký ở đâu?",
+        "expected_answer": "Tại UBND xã, phường, thị trấn.",
+        "context": "Điều 15. 1. Đăng ký cai nghiện tại UBND xã, phường, thị trấn.",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_032",
+        "question": "Cai nghiện tự nguyện tại cộng đồng mất tối đa bao lâu?",
+        "expected_answer": "Văn bản chỉ quy định thời gian cai nghiện tối thiểu là 12 tháng, không nêu tối đa.",
+        "context": "Điều 15. 5. Thời gian cai nghiện tối thiểu 12 tháng.",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_033",
+        "question": "UBND cấp xã có quyền quyết định đưa người đi cai nghiện bắt buộc không?",
+        "expected_answer": "Không, UBND cấp xã chỉ đề xuất, UBND cấp huyện mới có quyền quyết định.",
+        "context": "Điều 20. 1. Thủ tục: UBND cấp xã đề xuất, UBND cấp huyện quyết định.",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_034",
+        "question": "Làm thế nào để được giảm thời hạn cai nghiện bắt buộc?",
+        "expected_answer": "Nếu người đó tiến bộ rõ rệt thì được xem xét giảm thời hạn.",
+        "context": "Điều 20. 4. Giảm thời hạn: người tiến bộ rõ rệt được xem xét giảm thời hạn.",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_035",
+        "question": "Có mấy danh mục chất ma túy theo Nghị định 57?",
+        "expected_answer": "Chất ma túy được phân thành 4 danh mục.",
+        "context": "Điều 2. Phân loại chất ma tuý: Chất ma tuý được phân thành 4 danh mục...",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_036",
+        "question": "Cần sa và THC thuộc danh mục nào?",
+        "expected_answer": "Danh mục I.",
+        "context": "DANH MỤC I... 6. Cannabis (cần sa), THC — Nhóm Cannabinoid",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_037",
+        "question": "Morphine bị cấm sử dụng hoàn toàn trong mọi trường hợp đúng không?",
+        "expected_answer": "Sai, Morphine thuộc Danh mục II, được dùng hạn chế trong y tế.",
+        "context": "DANH MỤC II... 1. Morphine — thuốc giảm đau mạnh trong y tế",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_038",
+        "question": "Thuốc Methadone được phân loại vào danh mục nào?",
+        "expected_answer": "Danh mục II.",
+        "context": "DANH MỤC II... 3. Methadone — điều trị cai nghiện heroin",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_039",
+        "question": "Tiền chất dùng trong sản xuất chất ma túy nằm ở danh mục số mấy?",
+        "expected_answer": "Danh mục III.",
+        "context": "Điều 2... Danh mục III: Các tiền chất dùng trong sản xuất chất ma tuý",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_040",
+        "question": "Hóa chất Ephedrine thường được dùng để làm gì trong điều chế?",
+        "expected_answer": "Dùng để tổng hợp methamphetamine.",
+        "context": "DANH MỤC III... 1. Ephedrine — dùng để tổng hợp methamphetamine",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_041",
+        "question": "Có thể sử dụng Ketamine làm thuốc giảm đau tại phòng khám tư nhân tự do được không?",
+        "expected_answer": "Không, Ketamine thuộc Danh mục I, tuyệt đối cấm sử dụng trong y tế (nếu dùng không phép).",
+        "context": "DANH MỤC I... 8. Ketamine — Nhóm Dissociative (dùng không phép)",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "hard",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_042",
+        "question": "Danh mục chất ma túy được nhà nước cập nhật dựa trên tổ chức quốc tế nào?",
+        "expected_answer": "Ủy ban Kiểm soát ma túy quốc tế (INCB).",
+        "context": "Điều 6. Cập nhật danh mục... theo khuyến nghị của Ủy ban Kiểm soát ma tuý quốc tế (INCB)...",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_043",
+        "question": "Tàng trữ chất trong Danh mục I không phép có vi phạm hình sự không?",
+        "expected_answer": "Có, đó là vi phạm pháp luật hình sự theo BLHS 2015.",
+        "context": "Điều 5. Việc tàng trữ, buôn bán, sử dụng bất kỳ chất nào trong Danh mục I mà không có giấy phép hợp pháp là vi phạm pháp luật hình sự...",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "multi-turn"
+        }
+    },
+    {
+        "id": "case_044",
+        "question": "Heroin thuộc nhóm chất gì và danh mục nào?",
+        "expected_answer": "Nhóm Opioid tổng hợp, thuộc Danh mục I.",
+        "context": "DANH MỤC I... 1. Heroin (diacetylmorphine) — Nhóm Opioid tổng hợp",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_045",
+        "question": "Chất Safrole dùng để làm gì và ở danh mục nào?",
+        "expected_answer": "Dùng để tổng hợp MDA, MDMA; thuộc Danh mục III.",
+        "context": "DANH MỤC III... 4. Safrole — dùng để tổng hợp MDA, MDMA",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "easy",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_046",
+        "question": "Tôi trồng cây thuốc phiện sau vườn nhà để ngắm thì có sao không?",
+        "expected_answer": "Có thể bị phạt tù từ 06 tháng đến 03 năm hoặc nặng hơn tùy mức độ vi phạm.",
+        "context": "Điều 247. 1. Người nào trồng cây thuốc phiện... thì bị phạt tù từ 06 tháng đến 03 năm.",
+        "expected_retrieval_ids": [
+            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "adversarial"
+        }
+    },
+    {
+        "id": "case_047",
+        "question": "Nếu bị phát hiện sử dụng ma túy khi 20 tuổi lần đầu thì bị xử lý hình sự hay hành chính?",
+        "expected_answer": "Bị xử phạt vi phạm hành chính.",
+        "context": "Điều 8. 2. Người nghiện ma tuý từ đủ 18 tuổi trở lên lần đầu bị phát hiện sử dụng ma tuý bị xử phạt vi phạm hành chính.",
+        "expected_retrieval_ids": [
+            "luat-phong-chong-ma-tuy-2021"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_048",
+        "question": "Các chất hướng thần bị kiểm soát thuộc danh mục nào?",
+        "expected_answer": "Danh mục IV.",
+        "context": "Điều 2. Phân loại... - Danh mục IV: Các chất hướng thần được kiểm soát",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "fact-check"
+        }
+    },
+    {
+        "id": "case_049",
+        "question": "Xác định tình trạng nghiện ma túy có cần cả 4 dấu hiệu hay chỉ cần 1 dấu hiệu?",
+        "expected_answer": "Cần có đủ các dấu hiệu (4 dấu hiệu).",
+        "context": "Điều 10. 1. Người được xác định là nghiện ma tuý khi có đủ các dấu hiệu: a... b... c... d...",
+        "expected_retrieval_ids": [
+            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "medium",
+            "type": "ambiguous"
+        }
+    },
+    {
+        "id": "case_050",
+        "question": "Một bệnh nhân ung thư tự mua Fentanyl về dùng để giảm đau thì có hợp pháp không?",
+        "expected_answer": "Không, Fentanyl thuộc Danh mục I tuyệt đối cấm sử dụng trong y tế. Tàng trữ sử dụng không phép là vi phạm pháp luật hình sự.",
+        "context": "DANH MỤC I... 5. Fentanyl... và Điều 5. Việc tàng trữ, buôn bán, sử dụng bất kỳ chất nào trong Danh mục I mà không có giấy phép hợp pháp là vi phạm...",
+        "expected_retrieval_ids": [
+            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy"
+        ],
+        "metadata": {
+            "difficulty": "hard",
+            "type": "multi-turn"
+        }
+    }
+]
