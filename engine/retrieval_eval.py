@@ -23,10 +23,42 @@ class RetrievalEvaluator:
                 return 1.0 / (i + 1)
         return 0.0
 
-    async def evaluate_batch(self, dataset: List[Dict]) -> Dict:
+    async def score(self, test_case: Dict, agent_response: Dict) -> Dict:
+        """
+        Đánh giá Retrieval cho 1 test case.
+        """
+        expected_ids = test_case.get("expected_retrieval_ids", [])
+        # Lấy retrieved_ids từ agent metadata, fallback là danh sách rỗng
+        metadata = agent_response.get("metadata", {})
+        retrieved_ids = metadata.get("retrieved_ids", [])
+        
+        hit_rate = self.calculate_hit_rate(expected_ids, retrieved_ids)
+        mrr = self.calculate_mrr(expected_ids, retrieved_ids)
+        
+        return {
+            "retrieval": {
+                "hit_rate": hit_rate,
+                "mrr": mrr
+            }
+        }
+
+    async def evaluate_batch(self, dataset: List[Dict], agent_responses: List[Dict]) -> Dict:
         """
         Chạy eval cho toàn bộ bộ dữ liệu.
-        Dataset cần có trường 'expected_retrieval_ids' và Agent trả về 'retrieved_ids'.
         """
-        # Placeholder logic
-        return {"avg_hit_rate": 0.85, "avg_mrr": 0.72}
+        if not dataset or not agent_responses or len(dataset) != len(agent_responses):
+            return {"avg_hit_rate": 0.0, "avg_mrr": 0.0}
+
+        total_hit_rate = 0.0
+        total_mrr = 0.0
+        
+        for case, resp in zip(dataset, agent_responses):
+            score_res = await self.score(case, resp)
+            total_hit_rate += score_res["retrieval"]["hit_rate"]
+            total_mrr += score_res["retrieval"]["mrr"]
+            
+        n = len(dataset)
+        return {
+            "avg_hit_rate": total_hit_rate / n,
+            "avg_mrr": total_mrr / n
+        }

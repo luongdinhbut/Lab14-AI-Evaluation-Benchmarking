@@ -9,78 +9,6 @@ class MainAgent:
     def __init__(self):
         self.name = "SupportAgent-v1"
 
-    def _retrieve_doc_ids(self, question: str) -> List[str]:
-        normalized = question.lower()
-        ranked_ids = []
-
-        if any(keyword in normalized for keyword in [
-            "phạt tù",
-            "tử hình",
-            "chung thân",
-            "tàng trữ",
-            "vận chuyển",
-            "mua bán",
-            "sản xuất",
-            "hình phạt",
-            "điều 247",
-            "điều 248",
-            "điều 249",
-            "điều 250",
-            "điều 251",
-            "điều 255",
-            "điều 256",
-            "điều 258",
-            "điều 259",
-        ]):
-            ranked_ids.append("bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy")
-
-        if any(keyword in normalized for keyword in [
-            "phòng chống",
-            "người sử dụng",
-            "cai nghiện",
-            "xét nghiệm",
-            "quản lý người sử dụng",
-            "gia đình",
-            "cộng đồng",
-            "trách nhiệm",
-            "luật phòng",
-        ]):
-            ranked_ids.append("luat-phong-chong-ma-tuy-2021")
-
-        if any(keyword in normalized for keyword in [
-            "nghị định 105",
-            "hướng dẫn",
-            "thi hành luật",
-            "cơ sở cai nghiện",
-            "thẩm quyền",
-            "biểu mẫu",
-            "hồ sơ cai nghiện",
-        ]):
-            ranked_ids.append("nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy")
-
-        if any(keyword in normalized for keyword in [
-            "danh mục",
-            "tiền chất",
-            "mdma",
-            "methamphetamine",
-            "ketamine",
-            "nghị định 57",
-            "chất ma túy",
-        ]):
-            ranked_ids.append("nghi-dinh-57-2022-danh-muc-chat-ma-tuy")
-
-        fallback_ids = [
-            "bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy",
-            "luat-phong-chong-ma-tuy-2021",
-            "nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy",
-            "nghi-dinh-57-2022-danh-muc-chat-ma-tuy",
-        ]
-        for doc_id in fallback_ids:
-            if doc_id not in ranked_ids:
-                ranked_ids.append(doc_id)
-
-        return ranked_ids[:3]
-
     async def query(self, question: str) -> Dict:
         """
         Mô phỏng quy trình RAG:
@@ -90,9 +18,22 @@ class MainAgent:
         # Giả lập độ trễ mạng/LLM
         await asyncio.sleep(0.5) 
         
-        retrieved_ids = self._retrieve_doc_ids(question)
+        # Simple keyword matching to simulate retrieval
+        q_lower = question.lower()
+        retrieved_ids = []
+        if "tù" in q_lower or "hình phạt" in q_lower or "điều 247" in q_lower or "điều 248" in q_lower or "điều 249" in q_lower or "điều 250" in q_lower or "tàng trữ" in q_lower or "vận chuyển" in q_lower or "mua bán" in q_lower:
+            retrieved_ids.append("bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy")
+        if "danh mục" in q_lower or "thuốc phiện" in q_lower or "cần sa" in q_lower or "ketamine" in q_lower or "nghị định 57" in q_lower or "fentanyl" in q_lower or "heroin" in q_lower:
+            retrieved_ids.append("nghi-dinh-57-2022-danh-muc-chat-ma-tuy")
+        if "cai nghiện" in q_lower or "thanh thiếu niên" in q_lower or "luật phòng" in q_lower or "xác định tình trạng nghiện" in q_lower or "trách nhiệm" in q_lower:
+            retrieved_ids.append("luat-phong-chong-ma-tuy-2021")
+        if "thuốc gây nghiện" in q_lower or "nghị định 105" in q_lower or "tiền chất" in q_lower or "cơ sở" in q_lower:
+            retrieved_ids.append("nghi-dinh-105-2021-huong-dan-luat-phong-chong-ma-tuy")
+            
+        # Fallback if no match
+        if not retrieved_ids:
+            retrieved_ids = ["bo-luat-hinh-su-2015-chuong-xx-toi-pham-ma-tuy", "luat-phong-chong-ma-tuy-2021"]
 
-        # Giả lập dữ liệu trả về
         return {
             "answer": f"Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi '{question}' như sau: [Câu trả lời mẫu].",
             "contexts": [
@@ -101,10 +42,10 @@ class MainAgent:
             ],
             "retrieved_ids": retrieved_ids,
             "metadata": {
-                "model": "gpt-4o-mini",
+                "model": "gpt-5.4-mini",
                 "tokens_used": 150,
-                "cost_usd": 0.00015,
-                "sources": ["policy_handbook.pdf"]
+                "retrieved_ids": retrieved_ids,
+                "cost_usd": 0.001
             }
         }
 

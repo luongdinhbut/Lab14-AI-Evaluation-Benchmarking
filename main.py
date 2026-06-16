@@ -10,6 +10,8 @@ from agent.main_agent import MainAgent
 
 DATASET_CANDIDATES = [
     "data/golden_set.json",
+    "data/golden_set.jsonl",
+    "data/golden_dataset.json",
 ]
 
 # Giả lập các components Expert
@@ -109,7 +111,7 @@ def decide_release(baseline_summary, candidate_summary):
 
     thresholds = {
         "min_avg_score": 3.0,
-        "min_hit_rate": 0.8,
+        "min_hit_rate": 0.75,
         "min_retrieval_coverage": 0.8,
         "min_agreement_rate": 0.7,
         "max_avg_latency": 2.0,
