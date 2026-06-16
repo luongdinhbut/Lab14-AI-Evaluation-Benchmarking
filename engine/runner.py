@@ -64,6 +64,8 @@ class BenchmarkRunner:
                 response.get("answer", ""),
                 expected_answer,
             )
+            judge_tokens_used = int(judge_result.get("tokens_used", 0) or 0)
+            judge_cost_usd = float(judge_result.get("cost_usd", 0.0) or 0.0)
 
             error_type = self._classify_error(test_case, ragas_scores, judge_result)
             status = "fail" if error_type else "pass"
@@ -77,8 +79,12 @@ class BenchmarkRunner:
                 "contexts": response.get("contexts", []),
                 "retrieved_ids": response.get("retrieved_ids", []),
                 "latency": latency,
-                "tokens_used": usage["tokens_used"],
-                "cost_usd": usage["cost_usd"],
+                "agent_tokens_used": usage["tokens_used"],
+                "judge_tokens_used": judge_tokens_used,
+                "tokens_used": usage["tokens_used"] + judge_tokens_used,
+                "agent_cost_usd": usage["cost_usd"],
+                "judge_cost_usd": judge_cost_usd,
+                "cost_usd": usage["cost_usd"] + judge_cost_usd,
                 "model": usage["model"],
                 "ragas": ragas_scores,
                 "judge": judge_result,
@@ -98,7 +104,11 @@ class BenchmarkRunner:
                 "contexts": response.get("contexts", []) if isinstance(response, dict) else [],
                 "retrieved_ids": response.get("retrieved_ids", []) if isinstance(response, dict) else [],
                 "latency": latency,
+                "agent_tokens_used": usage["tokens_used"],
+                "judge_tokens_used": 0,
                 "tokens_used": usage["tokens_used"],
+                "agent_cost_usd": usage["cost_usd"],
+                "judge_cost_usd": 0.0,
                 "cost_usd": usage["cost_usd"],
                 "model": usage["model"],
                 "ragas": self._default_ragas(),

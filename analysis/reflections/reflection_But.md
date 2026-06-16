@@ -7,6 +7,7 @@
 - Cập nhật `main.py` để tạo `reports/summary.json`, `reports/benchmark_results.json`, tính metrics tổng hợp và đưa ra quyết định `APPROVE` hoặc `BLOCK_RELEASE`.
 - Tích hợp `data/golden_set.json` vào pipeline benchmark và giữ fallback cho `.jsonl` nếu nhóm cần export định dạng cũ.
 - Bổ sung retrieval mô phỏng theo keyword trong agent mẫu để runner có thể tính Hit Rate/MRR với golden set hiện tại.
+- Bổ sung Gemini multi-judge qua `engine/llm_judge.py`, đọc cấu hình từ `.env`, có fallback mock khi chưa có API key.
 
 ## Technical Depth
 
@@ -14,6 +15,7 @@
 - Hit Rate kiểm tra trong top-k tài liệu truy xuất có ít nhất một tài liệu đúng hay không.
 - Async batching giúp benchmark nhiều test cases nhanh hơn, nhưng vẫn cần giới hạn `batch_size` để tránh rate limit khi dùng API thật.
 - Regression Gate giúp chặn phiên bản agent mới nếu chất lượng, retrieval reliability, agreement rate, latency hoặc cost tệ hơn ngưỡng nhóm đặt ra.
+- Gemini judge dùng hai model khác nhau để tính `agreement_rate`; nếu lệch điểm vượt ngưỡng thì hệ thống dùng cách xử lý thận trọng bằng điểm thấp hơn.
 
 ## Problem Solving
 
@@ -27,5 +29,7 @@
   - `engine/runner.py`
   - `main.py`
   - `agent/main_agent.py`
-  - `data/golden_set.json`
+- `data/golden_set.json`
+  - `engine/llm_judge.py`
+  - `.env.example`
   - `analysis/reflections/reflection_But.md`

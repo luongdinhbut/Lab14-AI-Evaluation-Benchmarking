@@ -5,6 +5,7 @@ import os
 import time
 from engine.runner import BenchmarkRunner
 from engine.retrieval_eval import RetrievalEvaluator
+from engine.llm_judge import LLMJudge
 from agent.main_agent import MainAgent
 
 DATASET_CANDIDATES = [
@@ -40,15 +41,6 @@ class ExpertEvaluator:
                 "expected_ids": expected_ids,
                 "retrieved_ids": retrieved_ids,
             },
-        }
-
-class MultiModelJudge:
-    async def evaluate_multi_judge(self, q, a, gt):
-        return {
-            "final_score": 4.5,
-            "agreement_rate": 0.8,
-            "individual_scores": {"judge_a": 4.0, "judge_b": 5.0},
-            "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
         }
 
 def resolve_dataset_path(path=None):
@@ -170,7 +162,7 @@ async def run_benchmark_with_results(agent_version: str):
         print(f"❌ File {dataset_path} rỗng. Hãy tạo ít nhất 1 test case.")
         return None, None
 
-    runner = BenchmarkRunner(MainAgent(), ExpertEvaluator(), MultiModelJudge())
+    runner = BenchmarkRunner(MainAgent(), ExpertEvaluator(), LLMJudge())
     results = await runner.run_all(dataset)
     summary = summarize_results(results, agent_version)
     return results, summary
